@@ -29,40 +29,70 @@
 			"allowManualEntry": true
 		},
 		"14": {
-			"label": "BASIC SET reports",
-			"description": "0 - disabled, 1 - enabled",
+			"label": "Basic Set Reports",
+			"description": "Enable or disable usage of the Basic Set Report when motion is detected",
 			"valueSize": 1,
 			"minValue": 0,
 			"maxValue": 1,
 			"defaultValue": 0,
 			"readOnly": false,
 			"writeOnly": false,
-			"allowManualEntry": true
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disabled",
+					"value": 0
+				},
+				{
+					"label": "Enabled",
+					"value": 1
+				}
+			]
 		},
 		"15": {
-			"label": "reverse BASIC SET",
-			"description": "0: 255 motion, 0 timeout. 1: 0 motion, 255 timeout",
+			"label": "Basic Set Values",
+			"description": "Values reported will be 0 or 255. Choose which value means what",
 			"valueSize": 1,
 			"minValue": 0,
 			"maxValue": 1,
 			"defaultValue": 0,
 			"readOnly": false,
 			"writeOnly": false,
-			"allowManualEntry": true
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Motion is 255, Timeout is 0",
+					"value": 0
+				},
+				{
+					"label": "Motion is 0, Timeout is 255",
+					"value": 1
+				}
+			]
 		},
 		"17": {
-			"label": "vibration sensor",
-			"description": "0=disabled, 1=enabled",
+			"label": "Vibration Sensor",
+			"description": "Enable or disable the vibration sensor",
 			"valueSize": 1,
 			"minValue": 0,
 			"maxValue": 1,
 			"defaultValue": 1,
 			"readOnly": false,
 			"writeOnly": false,
-			"allowManualEntry": true
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disabled",
+					"value": 0
+				},
+				{
+					"label": "Enabled",
+					"value": 1
+				}
+			]
 		},
 		"18": {
-			"label": "trigger interval",
+			"label": "Trigger Interval",
 			"description": "3=6 seconds, 65535=65538 seconds (add 3 seconds to value set)",
 			"unit": "seconds",
 			"valueSize": 2,
@@ -76,18 +106,28 @@
 		},
 		"20": {
 			"label": "LED Indicator",
-			"description": "0=disabled, 1=enabled (default)",
+			"description": "Alternatively, click the button on the device 6 times to toggle the LED Indicator",
 			"valueSize": 1,
 			"minValue": 0,
 			"maxValue": 1,
 			"defaultValue": 1,
 			"readOnly": false,
 			"writeOnly": false,
-			"allowManualEntry": true
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Disabled",
+					"value": 0
+				},
+				{
+					"label": "Enabled",
+					"value": 1
+				}
+			]
 		},
 		"32": {
 			"label": "Low Battery Alert",
-			"description": "percent battery left",
+			"description": "The percentage battery remaining that will trigger a low battery alert",
 			"valueSize": 1,
 			"minValue": 10,
 			"maxValue": 50,

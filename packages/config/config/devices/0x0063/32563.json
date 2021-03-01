@@ -26,7 +26,27 @@
 			"defaultValue": 1,
 			"readOnly": false,
 			"writeOnly": false,
-			"allowManualEntry": true
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Notification",
+					"value": 1
+				},
+				{
+					"label": "Basic Set",
+					"value": 2
+				},
+				{
+					"label": "Basic Report",
+					"value": 3
+				}
+			]
 		}
+	},
+	"metadata": {
+		"inclusion": "Press and release the manual/program button on the device.",
+		"exclusion": "Press and release the manual/program button on the device.",
+		"reset": "Press the program button 10 times within 6 seconds. If your Door Sensor has been successfully reset, its LED light will blink for 3 seconds.",
+		"manual": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/1800/32563-1%20EnFrSp%20QSG%20-%20Combined.pdf"
 	}
 }

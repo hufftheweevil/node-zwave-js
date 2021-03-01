@@ -18,7 +18,7 @@
 	"supportsZWavePlus": true,
 	"paramInformation": {
 		"1": {
-			"label": "On/Off After Power",
+			"label": "On/Off After Power Failure",
 			"description": "On/Off Status After Power Failure",
 			"valueSize": 1,
 			"minValue": 0,
